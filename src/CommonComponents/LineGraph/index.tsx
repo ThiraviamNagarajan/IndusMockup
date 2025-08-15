@@ -14,12 +14,10 @@ const LearningProgressChart = ({ currentScore, predictedScore }: any) => {
       
       if (!ctx) return;
       
-      // Destroy existing chart if it exists
       if (chartInstance.current) {
         chartInstance.current.destroy();
       }
       
-      // Create new chart - no need to register components with 'auto'
       chartInstance.current = new Chart(ctx, {
         type: 'line',
         data: {
@@ -99,14 +97,11 @@ const LearningProgressChart = ({ currentScore, predictedScore }: any) => {
         <h3 className="font-semibold text-gray-800 mb-2">Student Personalised Learning Pathway</h3>
       </div>
       
-      {/* Progress Chart */}
       <div className="relative">
-        {/* Chart Container */}
         <div className="bg-gray-50 rounded-lg p-4 mb-4" style={{height: '300px'}}>
           <canvas ref={chartRef} id="learningChart"></canvas>
         </div>
         
-        {/* Score Display */}
         <div className="flex justify-between items-center mb-4 px-4">
           <div className="text-center">
             <div className="text-sm text-gray-600">Target</div>
@@ -122,7 +117,6 @@ const LearningProgressChart = ({ currentScore, predictedScore }: any) => {
           </div>
         </div>
         
-        {/* Action Button */}
         <div className="text-center">
           <button className="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors w-full">
             How to get this level

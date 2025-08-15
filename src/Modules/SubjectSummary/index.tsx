@@ -9,7 +9,6 @@ const SubjectSummary = () => {
 
   const firstStudent:any = studentsData[0];
 
-  // Access subject data dynamically by key
   const subjectData =
     firstStudent?.grades?.["Grade 8"]?.subjects?.[selectedSubject] || null;
 
@@ -19,7 +18,6 @@ const SubjectSummary = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
             Student Personalised Learning Pathway
@@ -29,21 +27,15 @@ const SubjectSummary = () => {
           </div>
         </div>
 
-        {/* Main Content Container */}
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left Section */}
           <div className="flex-1 space-y-8">
-            {/* Academic Scores Section */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex flex-col lg:flex-row gap-4 items-center">
-                {/* Academic Scores Label */}
                 <div className="bg-blue-500 text-white px-4 py-2 rounded font-semibold text-center  flex items-center justify-center lg:w-40 h-[50px]">
                   Academic Scores
                 </div>
 
-                {/* Score Cards Container */}
                 <div className="flex flex-col sm:flex-row gap-3 flex-1">
-                  {/* EOL Daily */}
                   <div className="flex flex-col gap-2 flex-1">
                     <div className="bg-yellow-300 rounded px-3 py-2 flex items-center justify-center">
                       <div className="text-sm font-medium text-gray-800 h-[40px] ">
@@ -62,7 +54,6 @@ const SubjectSummary = () => {
                     </div>
                   </div>
 
-                  {/* TA Twice a month */}
                   <div className="flex flex-col gap-2 flex-1">
                     <div className="bg-red-300 rounded px-3 py-2 text-center">
                       <div className="text-sm font-medium text-gray-800">
@@ -81,7 +72,6 @@ const SubjectSummary = () => {
                     </div>
                   </div>
 
-                  {/* SA Twice a year */}
                   <div className="flex flex-col gap-2 flex-1">
                     <div className="bg-green-300 rounded px-3 py-2 text-center">
                       <div className="text-sm font-medium text-gray-800">
@@ -100,7 +90,6 @@ const SubjectSummary = () => {
                     </div>
                   </div>
 
-                  {/* Prediction */}
                   <div className="flex flex-col gap-2 flex-1">
                     <div className="bg-gray-400 rounded px-3 py-2 text-center">
                       <div className="text-xs font-medium text-white">

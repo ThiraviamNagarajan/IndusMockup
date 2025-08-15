@@ -19,7 +19,6 @@ export default function StudentDashboard() {
       </h1>
 
       <div className="flex gap-5 mt-12 flex-col md:flex-row w-full max-w-6xl">
-        {/* Left Section */}
         <div className="basis-[75%]">
           <div className="flex flex-col md:flex-row w-full max-w-3xl gap-4">
             <img
@@ -62,7 +61,6 @@ export default function StudentDashboard() {
           </div>
         </div>
 
-        {/* Right Section */}
     <div className="flex flex-col gap-2 mt-6 max-w-xs">
   {subjectsArray.map((subject: any) => (
     <div
