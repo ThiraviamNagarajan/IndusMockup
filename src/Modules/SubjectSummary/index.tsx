@@ -137,7 +137,7 @@ const SubjectSummary = () => {
                     </div>
                     <div className="bg-orange-200 px-6 py-6 flex-1 flex items-center rounded-r-md">
                       <div className="text-sm font-medium text-gray-800">
-                        Very specific subject feedback
+                    {subjectData?.descriptive_eol}
                       </div>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ const SubjectSummary = () => {
                     </div>
                     <div className="bg-orange-200 px-6 py-6 flex-1 flex items-center rounded-r-md">
                       <div className="text-sm font-medium text-gray-800">
-                        Specific advice based on what I need to know
+                        {subjectData?.prescriptive_eol}
                       </div>
                     </div>
                   </div>
